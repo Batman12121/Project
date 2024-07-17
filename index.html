@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="scripts.js"></script>
+    <title>GeoNames APIs</title>
+
+</head>
+<body>
+
+<h2>GeoNames APIs</h2>
+
+<table>
+    <tr>
+        <th>API Name</th>
+        <th>API Description</th>
+        <th>API Parameters</th>
+    </tr>
+    <tr>
+        <td>Postal Code Lookup</td>
+        <td>
+            This API finds the location of a postal code.
+        </td>
+        <td>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="e.g., US"><br><br>
+            <label for="postalcode">Postal Code:</label>
+            <input type="text" id="postalcode" name="postalcode" placeholder="e.g., 90210"><br><br>
+            <button onclick="submitPostalCodeLookup()">Submit</button>
+            <div id="postalCodeResult" class="result"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>Timezone</td>
+        <td>
+            This API gets the timezone for a given location.
+        </td>
+        <td>
+            <label for="lat">Latitude:</label>
+            <input type="text" id="lat" name="lat" placeholder="e.g., 37.7749"><br><br>
+            <label for="lng">Longitude:</label>
+            <input type="text" id="lng" name="lng" placeholder="e.g., -122.4194"><br><br>
+            <button onclick="submitTimezone()">Submit</button>
+            <div id="timezoneResult" class="result"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>Country Info</td>
+        <td>
+            This API retrieves information about a country.
+        </td>
+        <td>
+            <label for="country_code">Country Code:</label>
+            <input type="text" id="country_code" name="country_code" placeholder="e.g., US"><br><br>
+            <button onclick="submitCountryInfo()">Submit</button>
+            <div id="countryInfoResult" class="result"></div>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
